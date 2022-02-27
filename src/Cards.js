@@ -7,14 +7,9 @@ export default class Cards extends Component {
     this.state = { data: [] };
   }
 
-  componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        this.setState({ data: res });
-      });
-  }
+  //TODO
+  // url "https://jsonplaceholder.typicode.com/users"
+  // fetch the data upon component mount
 
   removeOne = (i) => {
     const newData = [...this.state.data];
